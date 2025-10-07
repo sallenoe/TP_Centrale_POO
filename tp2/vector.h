@@ -6,7 +6,6 @@ private:
     double* coord; 
 
 public:
-    int nbrinstance;
     Vector();
     Vector(int d, double* co);
     Vector(Vector &v);
@@ -14,6 +13,8 @@ public:
     void setCooordinates(int d, double x);
     void afficher();
     double norme();
+    bool egalvecteur(Vector &v);
+    static int getNbrInstance();
 };
 
 

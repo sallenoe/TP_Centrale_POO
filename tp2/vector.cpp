@@ -2,6 +2,9 @@
 #include <iostream>
 #include <cmath>
 
+
+static int nbrinstance =0;
+
 Vector::Vector(){
     dim=0;
     coord = nullptr;
@@ -41,4 +44,23 @@ double Vector::norme(){
         temp+= coord[i]*coord[i];
     }
     return sqrt(temp);
+}
+
+bool Vector::egalvecteur(Vector &v){
+    bool temp = true;
+    std::cout << "1" << temp << std::endl; 
+    if(dim!=v.dim){
+        return false;
+    }
+    int i=0;
+    while(temp && i<dim){
+        temp = coord[i]==v.coord[i];
+        i++;
+        std::cout << "1" << temp << std::endl;
+    }
+    return temp; 
+}
+
+int Vector::getNbrInstance(){
+    return nbrinstance;
 }
