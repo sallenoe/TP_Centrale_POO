@@ -27,6 +27,9 @@ public:
     void setNbParti(int nombreDeParticipants);
     void setParticipants(std::string* ps);
     void setParticipant(int i, std::string s);
+    bool estCompatibleAvec(RDV r);
+    Heure getHeure();
+    Date getDate();
 
 };
 

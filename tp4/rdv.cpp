@@ -82,3 +82,16 @@ void RDV::setParticipants(std::string* ps){
 void RDV::setParticipant(int i, std::string s){
     listeParti[i] = s;
 }
+
+Heure RDV::getHeure(){
+    return heure;
+}
+
+Date RDV::getDate(){
+    return date;
+}
+
+bool RDV::estCompatibleAvec(RDV r){
+    return !(heure.getHeure()==r.getHeure().getHeure() && heure.getMinute() == r.getHeure().getMinute() && date.getJour()==r.getDate().getJour()
+&&date.getMois()==r.getDate().getMois() && date.getAnnee() == r.getDate().getAnnee());
+}
