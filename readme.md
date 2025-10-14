@@ -11,6 +11,8 @@ g++ point.cpp main.cpp
 g++ vector.cpp main2.cpp
 ### exercice 4
 partie 1 : g++ date.cpp main4.cpp ; partie 2 : g++ heure.cpp main4.cpp ; partie 3 : g++ date.cpp heure.cpp RDV.cpp main4.cpp
+### exercice 5
+g++ date.cpp heure.cpp rdv.cpp agenda.cpp main5.cpp
 
 ## Version
 Version 2.2
