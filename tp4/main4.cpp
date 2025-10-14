@@ -1,5 +1,6 @@
 #include "date.h"
 #include "heure.h"
+#include "rdv.h"
 #include <iostream>
 
 int main(){
@@ -8,7 +9,7 @@ int main(){
     d.affiche();
     d.setAnnee(2002);
     d.affiche();
-    std::cout << d.getAnnee() << std::endl;*/
+    std::cout << d.getAnnee() << std::endl;
 
     int heure=3;int minu = 45;
     Heure h = Heure(heure, minu);
@@ -16,9 +17,11 @@ int main(){
     Heure h1 = Heure();
     h1.affiche();
     h1.setHeure(4);
-    std::cout << h1.getHeure() << std::endl; 
+    std::cout << h1.getHeure() << std::endl; */
 
-
+    RDV r = RDV();
+    r.saisie();
+    r.affiche();
 
     return 0;
 }

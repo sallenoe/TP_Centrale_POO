@@ -5,12 +5,14 @@ bool Date::checkDate(int j,int m, int a){
     return(1<=j && j<=31 && 1<=m && m<= 12 && 2000<=a && a<=2050);    
 }
 
+
+Date::Date(){
+    jour=1;mois=1;annee=2000;
+}
 Date::Date(int j, int m, int a){
     if(checkDate(j,m,a)){
     jour=j; mois=m; annee= a;
-    std::cout << "test1" << std::endl;
     }else {
-        std::cout << "test2" << std::endl;
         jour=1;mois=1;annee=2000;
     } 
 }
